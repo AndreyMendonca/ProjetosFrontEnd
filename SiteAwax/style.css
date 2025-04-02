@@ -7,6 +7,7 @@
 body{
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header{
@@ -126,4 +127,68 @@ header{
     border-radius: 20px;
     margin-top: 30px;
 
+}
+
+.banner .sliders-pointers{
+    width: 100vw;
+    height: 20px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 7.5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active{
+    background-color: #b28756;
+}
+
+.default{
+    padding: 50px 0px;
+}
+
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #ccc;
+}
+
+.default .section-body{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.default.light{
+    background-color: #F7F7F7;
+}
+
+.default.light .section-title{
+    color: #000;
+}
+
+.default.dark{
+    background-color: #000;
+}
+
+.default.dark .section-title{
+    color: #fff;
 }
